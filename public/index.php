@@ -10,7 +10,8 @@ require_once __DIR__ . '/../vendor/autoload.php';
 use Silex\Application;
 use Silex\Provider;
 
-Dotenv::load(__DIR__ . '/../');
+//Dotenv::load(__DIR__ . '/../');
+Dotenv::load('/var/www');
 
 $mySqlOptions = [
     'driver' => 'pdo_mysql',
